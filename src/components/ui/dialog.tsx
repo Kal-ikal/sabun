@@ -30,12 +30,22 @@ function DialogClose({
   return <DialogPrimitive.Close data-slot="dialog-close" {...props} />;
 }
 
+<<<<<<< HEAD
 function DialogOverlay({
   className,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Overlay>) {
   return (
     <DialogPrimitive.Overlay
+=======
+const DialogOverlay = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
+>(({ className, ...props }, ref) => {
+  return (
+    <DialogPrimitive.Overlay
+      ref={ref}
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       data-slot="dialog-overlay"
       className={cn(
         "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50",
@@ -44,6 +54,7 @@ function DialogOverlay({
       {...props}
     />
   );
+<<<<<<< HEAD
 }
 
 function DialogContent({
@@ -51,10 +62,23 @@ function DialogContent({
   children,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content>) {
+=======
+});
+DialogOverlay.displayName = "DialogOverlay";
+
+const DialogContent = React.forwardRef<
+  React.ElementRef<typeof DialogPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
+>(({ className, children, ...props }, ref) => {
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
   return (
     <DialogPortal data-slot="dialog-portal">
       <DialogOverlay />
       <DialogPrimitive.Content
+<<<<<<< HEAD
+=======
+        ref={ref}
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
         data-slot="dialog-content"
         className={cn(
           "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
@@ -70,7 +94,12 @@ function DialogContent({
       </DialogPrimitive.Content>
     </DialogPortal>
   );
+<<<<<<< HEAD
 }
+=======
+});
+DialogContent.displayName = "DialogContent";
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
 
 function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (

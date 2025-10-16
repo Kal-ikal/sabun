@@ -1,9 +1,17 @@
 
   {
+<<<<<<< HEAD
       "name": "Admin Dashboard UI/UX Design",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
+=======
+      "name": "Web Dashboard Design for Annual",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+          "@jsr/supabase__supabase-js": "^2.49.8",
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
           "@radix-ui/react-accordion": "^1.2.3",
           "@radix-ui/react-alert-dialog": "^1.1.6",
           "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -30,6 +38,7 @@
           "@radix-ui/react-toggle": "^1.1.2",
           "@radix-ui/react-toggle-group": "^1.1.2",
           "@radix-ui/react-tooltip": "^1.1.8",
+<<<<<<< HEAD
           "class-variance-authority": "^0.7.1",
           "clsx": "*",
           "cmdk": "^1.1.1",
@@ -38,6 +47,16 @@
           "input-otp": "^1.4.2",
           "lucide-react": "^0.487.0",
           "motion": "*",
+=======
+          "@supabase/supabase-js": "*",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "*",
+          "cmdk": "^1.1.1",
+          "embla-carousel-react": "^8.6.0",
+          "hono": "*",
+          "input-otp": "^1.4.2",
+          "lucide-react": "^0.487.0",
+>>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
           "next-themes": "^0.4.6",
           "react": "^18.3.1",
           "react-day-picker": "^8.10.1",
