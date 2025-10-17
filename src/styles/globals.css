@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-=======
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
-<<<<<<< HEAD
   
   /* Primary Colors */
   --primary-blue: #2563EB;
@@ -115,86 +111,6 @@
   --sidebar-accent-foreground: #F8FAFC;
   --sidebar-border: #334155;
   --sidebar-ring: #3B82F6;
-=======
-  --background: #ffffff;
-  --foreground: #2c3e50;
-  --card: #ffffff;
-  --card-foreground: #2c3e50;
-  --popover: #ffffff;
-  --popover-foreground: #2c3e50;
-  --primary: #0A74DA;
-  --primary-foreground: #ffffff;
-  --secondary: #f8fafc;
-  --secondary-foreground: #2c3e50;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #42b983;
-  --accent-foreground: #ffffff;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: #e2e8f0;
-  --input: #ffffff;
-  --input-background: #ffffff;
-  --switch-background: #cbd5e1;
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --ring: #0A74DA;
-  --chart-1: #0A74DA;
-  --chart-2: #42b983;
-  --chart-3: #f59e0b;
-  --chart-4: #ef4444;
-  --chart-5: #8b5cf6;
-  --radius: 0.5rem;
-  --sidebar: #1e293b;
-  --sidebar-foreground: #f8fafc;
-  --sidebar-primary: #0A74DA;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #334155;
-  --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: #334155;
-  --sidebar-ring: #0A74DA;
-  /* Status colors */
-  --status-available: #42b983;
-  --status-in-use: #f59e0b;
-  --status-maintenance: #ef4444;
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
 }
 
 @theme inline {
@@ -217,10 +133,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-input-background: var(--input-background);
-<<<<<<< HEAD
-=======
-  --color-switch-background: var(--switch-background);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -239,12 +151,6 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-<<<<<<< HEAD
-=======
-  --color-status-available: var(--status-available);
-  --color-status-in-use: var(--status-in-use);
-  --color-status-maintenance: var(--status-maintenance);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
 }
 
 @layer base {
@@ -254,10 +160,7 @@
 
   body {
     @apply bg-background text-foreground;
-<<<<<<< HEAD
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-=======
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
   }
 }
 
@@ -267,90 +170,50 @@
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
-<<<<<<< HEAD
       font-size: 28px;
       font-weight: 700;
-=======
-      font-size: var(--text-2xl);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     h2 {
-<<<<<<< HEAD
       font-size: 24px;
       font-weight: 600;
-=======
-      font-size: var(--text-xl);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     h3 {
-<<<<<<< HEAD
       font-size: 20px;
       font-weight: 600;
-=======
-      font-size: var(--text-lg);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     h4 {
-<<<<<<< HEAD
       font-size: 16px;
       font-weight: 600;
-=======
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     p {
-<<<<<<< HEAD
       font-size: 16px;
       font-weight: 400;
-=======
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     label {
-<<<<<<< HEAD
       font-size: 14px;
       font-weight: 500;
-=======
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     button {
-<<<<<<< HEAD
       font-size: 14px;
       font-weight: 500;
-=======
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
 
     input {
-<<<<<<< HEAD
       font-size: 14px;
       font-weight: 400;
-=======
-      font-size: var(--text-base);
-      font-weight: var(--font-weight-normal);
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
       line-height: 1.5;
     }
   }
@@ -359,7 +222,6 @@
 html {
   font-size: var(--font-size);
 }
-<<<<<<< HEAD
 
 /* Glassmorphism utility */
 .glass {
@@ -384,5 +246,3 @@ html {
   background: #1E293B;
   box-shadow: 8px 8px 16px #0f172a, -8px -8px 16px #334155;
 }
-=======
->>>>>>> 893e9817e2179c9f18b4f50f52f0f9a2c206b684
